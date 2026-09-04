@@ -141,7 +141,7 @@ body {
 }
 
 .social-icon:hover {
-    transform: scale(1.2) translateY(-5px);
+    transform: scale(1.15);
     filter: drop-shadow(0 4px 6px rgba(255, 99, 71, 0.4));
 }
 
@@ -156,3 +156,59 @@ body {
     font-size: 40px;
     color: white;
 }
+/* RESPONSIVE - TABLET & HP BESAR */
+@media (max-width: 768px) {
+    .a-navbar {
+        font-size: 18px;
+    }
+
+    .li-navbar {
+        padding: 10px;
+        margin: 2px;
+    }
+
+    .wa-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .img-hero {
+        width: 120px;
+        height: 120px;
+    }
+
+    .h1-hero {
+        font-size: 28px;
+    }
+
+    .p-hero {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .social-link {
+        gap: 25px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .h1-footer {
+        font-size: 24px;
+    }
+}
+
+/* RESPONSIVE - HP KECIL */
+    .a-navbar {
+        font-size: 14px;
+    }
+
+    .h1-hero {
+        font-size: 22px;
+    }
+
+    .p-hero {
+        font-size: 12px;
+    }
