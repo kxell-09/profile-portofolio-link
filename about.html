@@ -1,8 +1,105 @@
 <html>
-    <head>
-        <title>ABOUT ME</title>
-    </head>
-    <body>
-        <h1>ABOUT ME</h1>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Gilang ramadhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVIGATION BAR-->
+      <div class="container-navbar">
+        <ul class="ul-navbar">
+          <li class="li-navbar">
+            <a href="index.html" class="a-navbar">HOME</a>
+          </li>
+          <li class="li-navbar">
+            <a href="about.html" class="a-navbar active">ABOUT ME</a>
+          </li>
+        </ul>
+      </div>
+      <!-- NAVIGATION BAR SELESAI -->
+
+      <div class="dark-section">
+        <img src="hero-transparant.png" alt="" class="side-photo" />
+
+        <!-- BIO SECTION -->
+        <section class="container-about-bio">
+          <h1 class="h1-about">About Me</h1>
+          <p class="p-about-bio">
+            I'm a 3rd-year vocational high school student majoring in Computer and Network Engineering (TKJ),
+            with a passion for coding. I enjoy exploring new things and learning technical skills through hands-on practice.
+          </p>
+        </section>
+        <!-- BIO SECTION SELESAI -->
+
+        <!-- SKILLS & TOOLS SECTION -->
+        <section class="container-skills-tools">
+          <h2 class="h2-section">Skills & Tools</h2>
+          <div class="card-wrapper">
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="card-icon" />
+              <p class="card-title">HTML</p>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="card-icon" />
+              <p class="card-title">CSS</p>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" class="card-icon" />
+              <p class="card-title">Lua</p>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="card-icon" />
+              <p class="card-title">VS Code</p>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="card-icon" />
+              <p class="card-title">Bootstrap</p>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS & TOOLS SECTION SELESAI -->
+
+        <!-- STORY SECTION -->
+        <section class="container-story">
+          <h2 class="h2-section">My Journey</h2>
+          <p class="p-story">
+            I started learning to code back in 6th grade, though it wasn't formal learning at all.
+            I used to watch a friend on Discord code stuff, and out of curiosity, I started trying it myself.
+            Little by little, I picked it up and just kept going from there.
+          </p>
+        </section>
+        <!-- STORY SECTION SELESAI -->
+
+        <!-- PROJECTS SECTION -->
+        <section class="container-projects">
+          <h2 class="h2-section">My Projects</h2>
+          <div class="project-card">
+            <p class="project-title">Procelent roleplay</p>
+            <p class="project-desc">
+              A FiveM roleplay server I built and managed from the ground up — handling everything from
+              Lua scripting and database setup to server administration.
+            </p>
+            <div class="tag-wrapper">
+              <span class="tag">Lua</span>
+              <span class="tag">FiveM</span>
+              <span class="tag">Database</span>
+              <span class="tag">Server admin</span>
+            </div>
+          </div>
+        </section>
+        <!-- PROJECTS SECTION SELESAI -->
+      </div>
+
+      <!-- FOOTER -->
+      <!-- FOOTER SELESAI -->
+    </div>
+  </body>
 </html>

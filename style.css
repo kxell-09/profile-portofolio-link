@@ -78,6 +78,23 @@ body {
 }
 
 .dark-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.side-photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
 }
 
 .container-hero {
@@ -90,6 +107,7 @@ body {
     text-align: center;
     padding: 20px;
     animation: fadeIn 0.6s ease-in;
+    user-select: none;
 }
 
 @keyframes fadeIn {
@@ -156,6 +174,147 @@ body {
     font-size: 40px;
     color: white;
 }
+
+/* ABOUT PAGE */
+.container-about-bio {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 60px 20px 30px;
+    user-select: none;
+}
+
+.h1-about {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.p-about-bio {
+    font-size: 16px;
+    color: #cccccc;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.h2-section {
+    font-size: 24px;
+    color: tomato;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-skills-tools {
+    position: relative;
+    z-index: 1;
+    padding: 30px 20px 60px;
+    color: white;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    transition: filter 0.3s ease;
+}
+
+.skill-card:hover .card-icon {
+    filter: drop-shadow(0 4px 6px rgba(255, 99, 71, 0.4));
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.container-story {
+    position: relative;
+    z-index: 1;
+    padding: 30px 20px 60px;
+    color: white;
+    text-align: center;
+}
+
+.p-story {
+    font-size: 15px;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.container-projects {
+    position: relative;
+    z-index: 1;
+    padding: 30px 20px 60px;
+    color: white;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 99, 71, 0.1);
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.tag-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: rgba(255, 99, 71, 0.15);
+    color: tomato;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
 /* RESPONSIVE - TABLET & HP BESAR */
 @media (max-width: 768px) {
     .a-navbar {
@@ -165,11 +324,6 @@ body {
     .li-navbar {
         padding: 10px;
         margin: 2px;
-    }
-
-    .wa-icon {
-        width: 26px;
-        height: 26px;
     }
 
     .img-hero {
@@ -198,9 +352,15 @@ body {
     .h1-footer {
         font-size: 24px;
     }
+
+    .side-photo {
+        width: 60%;
+        opacity: 0.2;
+    }
 }
 
 /* RESPONSIVE - HP KECIL */
+@media (max-width: 480px) {
     .a-navbar {
         font-size: 14px;
     }
@@ -212,3 +372,9 @@ body {
     .p-hero {
         font-size: 12px;
     }
+
+    .side-photo {
+        width: 70%;
+        opacity: 0.15;
+    }
+}
