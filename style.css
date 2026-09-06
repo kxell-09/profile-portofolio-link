@@ -404,7 +404,7 @@ body {
     }
 
     .side-photo {
-        width: 240px;
+        width: 20vh;
         opacity: 0.15;
     }
 }
